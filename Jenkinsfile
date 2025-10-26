@@ -13,7 +13,7 @@ pipeline{
         }
         stage("Run Unit and Integration tests"){
            steps{
-                bat "dotnet test --no-build --verbosity normal"
+                bat "dotnet test --no-build --verbosity normal" //requires .NET 8
             }
         }
     }
